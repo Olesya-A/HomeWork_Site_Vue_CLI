@@ -273,7 +273,7 @@
               viewBox="0 0 52 53"
               fill="none"
             >
-              <circle cx="26" cy="26.267" r="26" fill="white" />
+              <circle cx="26" cy="26.267" r="26" fill="#F4F0EC" />
               <path
                 d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813"
                 stroke="#292F36"
