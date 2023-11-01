@@ -26,7 +26,7 @@
     <div class="articles__details">
       <div
         class="articles__details_article"
-        v-for="item in details"
+        v-for="item in temp"
         :key="item.id"
       >
         <h2 class="articles__details_article_header">{{ item.header1 }}</h2>
@@ -306,11 +306,39 @@ export default {
           tagName: "Bedroom",
         },
       ],
+
+      temp: [
+        {
+          id: 1,
+          header1: "Let’s Get Solution for Building Construction Work",
+          image1: require("@/assets/image/details_1_1.jpg"),
+          date: "26 December,2022 ",
+          nav: "Interior / Home / Decore",
+          text1:
+            "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don't look even slightly believable.",
+          text2:
+            "Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.",
+          commas: require("@/assets/image/details_commas.png"),
+          slogan: "The details are not the details. They make the design.",
+          header2: "Design sprints are great",
+          text3:
+            "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
+          list1:
+            "Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
+          list2:
+            "Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
+          list3:
+            "Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
+          image2: require("@/assets/image/details_1_2.jpg"),
+          text4:
+            "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
+        },
+      ],
     };
   },
   methods: {
     chooseArticle(id) {
-      this.details = this.details.filter((el) => el.id === id);
+      this.temp = this.details.filter((el) => el.id === id);
     },
   },
 };
