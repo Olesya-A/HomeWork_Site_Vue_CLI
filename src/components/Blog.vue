@@ -84,7 +84,7 @@
         </div>
       </article>
     </div>
-    <div class="news__pagination"></div>
+    <PaginationComponent />
   </section>
   <FooterComponent />
 </template>
@@ -92,6 +92,7 @@
 <script>
 import FooterComponent from "./FooterComponent.vue";
 import HeaderComponent from "./HeaderComponent.vue";
+import PaginationComponent from "./PaginationComponent.vue";
 
 export default {
   data() {
@@ -136,7 +137,7 @@ export default {
       ],
     };
   },
-  components: { HeaderComponent, FooterComponent },
+  components: { HeaderComponent, FooterComponent, PaginationComponent },
 };
 </script>
 
